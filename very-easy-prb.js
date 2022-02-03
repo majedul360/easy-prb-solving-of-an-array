@@ -45,3 +45,38 @@ function convertIntegers (arry) {
 
 let getString = convertIntegers(integerString);
 console.log(getString);
+
+// Create a function that takes an array of numbers or letters and returns a string. 
+
+let array = [1, 2, 3, 4, 5, 6];
+
+function convertString (arry) {
+    let string = '';
+    for(let element of arry) {
+        let convert = element.toString();
+        string = string + convert; 
+    }
+    return string;
+}
+
+let gotString = convertString(array);
+console.log(gotString);
+
+//Create a function to concatenate two integer arrays.
+
+let arry1 = [1, 2, 3, 4, 5, 6];
+let arry2 = [7, 8, 9, 10, 11];
+
+function concatArry (arry1, arry2) {
+    let resultArry = [];
+    for (let element1 of arry1) {
+        resultArry.push(element1);
+    }
+    for (let element2 of arry2) {
+        resultArry.push(element2);
+    }
+    return resultArry;
+}
+
+let finalArry = concatArry(arry1, arry2);
+console.log(finalArry);
