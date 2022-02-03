@@ -80,3 +80,23 @@ function concatArry (arry1, arry2) {
 
 let finalArry = concatArry(arry1, arry2);
 console.log(finalArry);
+
+
+// Create a function that takes an array and a string as arguments and returns the index of the string. 
+
+let newArry = ['a', 'b', 'c', 'd'];
+
+function findIndexOfArry (input1, input2) {
+    let newArry = [];
+    for (let element of input1) {
+        newArry.push(element);
+    }
+    newArry.push(input2);
+    console.log(newArry.indexOf('e'));
+}
+
+findIndexOfArry(newArry, 'e');;
+
+let practiceArry = [1, 2, 3, 4, 5];
+let last= practiceArry[practiceArry.length -1];
+console.log(practiceArry.indexOf(last));
