@@ -92,11 +92,10 @@ function findIndexOfArry (input1, input2) {
         newArry.push(element);
     }
     newArry.push(input2);
-    console.log(newArry.indexOf('e'));
+    return newArry;
 }
 
-findIndexOfArry(newArry, 'e');;
+let getNewArrey =findIndexOfArry(newArry, 'e');
+let last=getNewArrey[getNewArrey.length -1];
+console.log(getNewArrey.indexOf(last));
 
-let practiceArry = [1, 2, 3, 4, 5];
-let last= practiceArry[practiceArry.length -1];
-console.log(practiceArry.indexOf(last));
