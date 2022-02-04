@@ -99,3 +99,18 @@ let getNewArrey =findIndexOfArry(newArry, 'e');
 let last=getNewArrey[getNewArrey.length -1];
 console.log(getNewArrey.indexOf(last));
 
+
+// add arry numbers 
+
+let testArry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function sumArray(arr) {
+	let sum = 0;	
+    for (let element of arr) {
+        sum+= element;
+      }
+  return sum
+}
+
+let getAddNumbers = sumArray(testArry);
+console.log(getAddNumbers);
