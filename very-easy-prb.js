@@ -141,3 +141,28 @@ console.log(getMinMax);
 
 
 
+/* When resistors are connected together in series, the same current passes through each resistor in the chain and the total resistance, RT, of the circuit must be equal to the sum of all the individual resistors added together. That is:
+
+RT = R1 + R2 + R3 ...
+Create a function that takes an array of values resistance that are connected in series, and calculates the total resistance of the circuit in ohms. The ohm is the standard unit of electrical resistance in the International System of Units ( SI ). */
+
+let circuit = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function resistance (arry) {
+    let totalResistance = 0;
+    for (let element of arry) {
+        totalResistance += element; 
+    }
+
+    totalResistance += ` ohm`;
+    return totalResistance; 
+}
+
+let totalResistance = resistance(circuit);
+console.log(totalResistance);
+
+
+
+
+
+
