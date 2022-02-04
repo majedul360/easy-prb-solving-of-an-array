@@ -114,3 +114,30 @@ function sumArray(arr) {
 
 let getAddNumbers = sumArray(testArry);
 console.log(getAddNumbers);
+
+// Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order. 
+
+let arryNumbers = [2, 3, 4, 5, 1, 6, 7, 8, 9, 10, 11];
+
+function minmax (arry) {
+    let minmax = [];
+    let min = arry[0];
+    let max = arry[0];
+    for (let element of arry) {
+        if (element < min) {
+            min = element;
+        }
+        if (element > max) {
+            max = element;
+        }
+    }
+    minmax.push(min);
+    minmax.push(max);
+    return minmax;
+}
+
+let getMinMax = minmax(arryNumbers);
+console.log(getMinMax);
+
+
+
